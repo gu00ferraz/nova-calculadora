@@ -5,7 +5,7 @@ export default function MeuBotao (props) {
 
 return(
 
-<button onClick={props.aoClicar} className = 'button'>{props.label}</button>
+<button onClick={e => props.aoClicar && props.aoClicar(props.label)} className = 'button'>{props.label}</button>
 
 )
 
